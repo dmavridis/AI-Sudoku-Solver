@@ -3,12 +3,11 @@
 
 # Question 1 (Naked Twins)
 Q: How do we use constraint propagation to solve the naked twins problem?  
-A: When a naked twins pair is detected then it means that the two values of the squares will fill those two squares only. We just don't now the order. However, if those values are probable to any of the common peers of the naked pair, they can be eliminated from there. 
+A: *Student should provide answer here*
 
 # Question 2 (Diagonal Sudoku)
 Q: How do we use constraint propagation to solve the diagonal sudoku problem?  
-A: The diagonal Sudoku has an extra constraint, where the boxes that belong to the two main diagonals have extra peers which are the remaining boxes of the diagonal they belong. For example the box A1 has as peers, row A, the column 1, the box defined by A1 and C3 and also the diagonal A1, B2, ... I9. 
-
+A: *Student should provide answer here*
 
 ### Install
 
@@ -25,15 +24,21 @@ If not, please see how to download pygame [here](http://www.pygame.org/download.
 
 ### Code
 
-* `solutions.py` - You'll fill this in as part of your solution.
-* `solution_test.py` - Do not modify this. You can test your solution by running `python solution_test.py`.
-* `PySudoku.py` - Do not modify this. This is code for visualizing your solution.
-* `visualize.py` - Do not modify this. This is code for visualizing your solution.
+* `solution.py` - Fill in the required functions in this file to complete the project.
+* `test_solution.py` - You can test your solution by running `python -m unittest`.
+* `PySudoku.py` - This is code for visualizing your solution.
+* `visualize.py` - This is code for visualizing your solution.
 
 ### Visualizing
 
-To visualize your solution, please only assign values to the values_dict using the ```assign_values``` function provided in function.py
+To visualize your solution, please only assign values to the values_dict using the `assign_value` function provided in solution.py
 
-### Data
+### Submission
+Before submitting your solution to a reviewer, you are required to submit your project to Udacity's Project Assistant, which will provide some initial feedback.  
 
-The data consists of a text file of diagonal sudokus for you to solve.
+The setup is simple.  If you have not installed the client tool already, then you may do so with the command `pip install udacity-pa`.  
+
+To submit your code to the project assistant, run `udacity submit` from within the top-level directory of this project.  You will be prompted for a username and password.  If you login using google or facebook, visit [this link](https://project-assistant.udacity.com/auth_tokens/jwt_login) for alternate login instructions.
+
+This process will create a zipfile in your top-level directory named sudoku-<id>.zip.  This is the file that you should submit to the Udacity reviews system.
+
